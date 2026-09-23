@@ -27,10 +27,11 @@ console.log(isPalindrome("mimim"))
 
 
 function calculateDiscountedPrice(originalPrice, discountPercentage){
-    let discountedPrice = originalPrice * discountPercentage;
-    return discountedPrice;
+    let discountPrice = originalPrice * (discountPercentage/100);
+    let discountAmount = originalPrice - discountPrice; 
+    return discountAmount
 }
-console.log(calculateDiscountedPrice(120,0.1));
+console.log(calculateDiscountedPrice(100,0));
 
 
 
